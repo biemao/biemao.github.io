@@ -42860,7 +42860,7 @@ N.SH.prototype={
 $1:function(a){return!0},
 $S:32}
 F.vi.prototype={
-K:function(a,b){return new S.nT(new F.o5("Flutter Demo Home Page",null),"Flutter Demo",X.Yy(null,C.lJ),null)}}
+K:function(a,b){return new S.nT(new F.o5("\u5de5\u5177\u9875\u9762",null),"Flutter Demo",X.Yy(null,C.lJ),null)}}
 F.o5.prototype={
 aI:function(){return new F.qv(C.l)}}
 F.qv.prototype={
