@@ -6,16 +6,16 @@ const RESOURCES = {
   "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "68adcdc6b4f13472c198391d76415409",
+"assets/NOTICES": "a8d1d130b9909728d724354dc06becc1",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "cfb75738c4947033b266edd658e2f08e",
-"/": "cfb75738c4947033b266edd658e2f08e",
-"main.dart.js": "40c506f73516ef7f3a4ceb09d3dba8d1",
-"manifest.json": "493a85f1f54615f058f6a09dc3edd4c8",
-"version.json": "5e74901a4c27541b3553b17943c7ce54"
+"index.html": "698803e35580b8725c82fce6fd844705",
+"/": "698803e35580b8725c82fce6fd844705",
+"main.dart.js": "0dfd61dce94f0fa39e1753bcd85271e1",
+"manifest.json": "4fb4b9cb036e28a31dca0ba7543631e4",
+"version.json": "be249facc878cd087d3ccf9bd87064d6"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -159,7 +159,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
