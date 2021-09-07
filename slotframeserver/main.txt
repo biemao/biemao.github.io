@@ -2,7 +2,7 @@ print('LuaView Start!----------------------------------->>')
 UnityEngine = CS.UnityEngine
 PlayerPrefs = UnityEngine.PlayerPrefs;
 GameObject = UnityEngine.GameObject;
-LuaViewUtils = CS.LuaViewUtils;
+LuaView = CS.LuaView;
 
 
 Utils = {
@@ -15,7 +15,7 @@ function Utils.GetGameObject(goName)
 end
 
 function main()
-    LuaViewUtils.ShowBundle('E:/UnityProject/slotframe/data/GooglePlay/assetbundle/view$coinsanmview$coinsanmview','Assets/LuaView/LuaViewAssetBundle/Home.prefab');
+    LuaView.ShowBundle('E:/UnityProject/slotframe/data/GooglePlay/assetbundle/view$coinsanmview$coinsanmview','Assets/LuaView/LuaViewAssetBundle/Home.prefab');
 end
 
 
