@@ -1,0 +1,8 @@
+Server = {}
+
+function Server.Add(a,b)
+    local res = a + b;
+    return res;
+end
+
+return Server;
