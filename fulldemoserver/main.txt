@@ -1,0 +1,23 @@
+print('LuaView Start!----------------------------------->>')
+UnityEngine = CS.UnityEngine
+PlayerPrefs = UnityEngine.PlayerPrefs;
+GameObject = UnityEngine.GameObject;
+LuaView = CS.LuaView;
+
+
+Utils = {
+
+}
+
+function Utils.GetGameObject(goName)
+    local res =GameObject. Find('LuaView/Root/'.. goName)
+    return res;
+end
+
+function main()
+    LuaView.ShowBundle('E:/UnityProject/slotframe/data/GooglePlay/assetbundle/view$coinsanmview$coinsanmview','Assets/LuaView/LuaViewAssetBundle/Home.prefab');
+end
+
+
+main();
+
