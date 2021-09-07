@@ -24,7 +24,7 @@ function Utils.GetGameObject(goName)
 end
 
 function main()
-    LuaView.ShowBundle(urls.home,'Assets/LuaView/LuaViewAssetBundle/Home.prefab');
+    LuaView.ShowBundle(urls.home,'Assets/Frame/LuaView/LuaViewAssetBundle/Home.prefab');
 end
 
 
