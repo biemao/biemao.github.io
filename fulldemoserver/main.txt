@@ -1,9 +1,12 @@
 print('LuaView Start!----------------------------------->>')
 
 UnityEngine = CS.UnityEngine
+UI = UnityEngine.UI;
 PlayerPrefs = UnityEngine.PlayerPrefs;
 GameObject = UnityEngine.GameObject;
 LuaView = CS.LuaView;
+Image =  UI.Image;
+Button = UI.Button;
 
 host = 'https://biemao.github.io/fulldemoserver/'
 urls = {
