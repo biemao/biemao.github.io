@@ -1,32 +1,31 @@
-print('LuaView Start!----------------------------------->>')
+print('LuaView Start!------------------------------------------------------------------->>')
 
-UnityEngine = CS.UnityEngine
+UnityEngine = CS.UnityEngine;
 UI = UnityEngine.UI;
 PlayerPrefs = UnityEngine.PlayerPrefs;
 GameObject = UnityEngine.GameObject;
-LuaView = CS.LuaView;
 Image =  UI.Image;
 Button = UI.Button;
+Text = UI.Text;
 
-host = 'https://biemao.github.io/fulldemoserver/'
-urls = {
-    home = host .. 'home',
-
-}
-
-Utils = {
-
-}
-
+LuaView = CS.LuaView;
+LuaViewUtils = CS.LuaViewUtils;
+--------------------------------------------------------------------------------------------
+Utils = {}
 function Utils.GetGameObject(goName)
     local res =GameObject. Find('LuaView/Root/'.. goName)
     return res;
 end
+--------------------------------------------------------------------------------------------ViewManager
+ViewManager = {}
+function ViewManager.OnViewClose()
 
-function main()
-    LuaView.ShowBundle(urls.home,'Assets/Frame/LuaView/LuaViewAssetBundle/Home.prefab');
 end
-
+--------------------------------------------------------------------------------------------Main
+function main()
+    LuaView.ShowBundle('home');
+    LuaView.ShowBundle('webviewtest')
+end
 
 main();
 

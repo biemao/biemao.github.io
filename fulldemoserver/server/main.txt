@@ -1,7 +1,7 @@
 Server = {}
 
 function Server.Add(a,b)
-    local res = a + b;
+    local res = a + b + b;
     return res;
 end
 
